@@ -1,8 +1,9 @@
 SM-N9005 Kernel with usbtv module
 ---------------------------------
 
-Based on the [Blaze™ Kernel -2](http://forum.xda-developers.com/showthread.php?t=2758405)
-Tested with [Echoe Rom v.13](http://forum.xda-developers.com/showthread.php?t=2495688)
+Based on the [Blaze™ Kernel -2](http://forum.xda-developers.com/showthread.php?t=2758405) + [backported usbtv module](https://github.com/mwelchuk/usbtv)
+
+Tested with the [Echoe Rom v.13](http://forum.xda-developers.com/showthread.php?t=2495688)
 
 ## How to build: ([also usable](http://forum.xda-developers.com/showthread.php?t=2583732))
 1. Create new virtual machine with `minimal ubuntu 14.04 x86_64` and go into through ssh
@@ -16,7 +17,7 @@ Tested with [Echoe Rom v.13](http://forum.xda-developers.com/showthread.php?t=24
   ```sh
   mkdir -p ~/src/boot ~/toolchain
   git clone https://github.com/rabits/kernel_n9005.git ~/src/kernel_n9005
-  git clone https://github.com/xiaolu/mkbootimg_tools.git ~/src/bootimg-tools
+  git clone https://github.com/rabits/mkbootimg_tools ~/src/bootimg-tools
   ```
 4. Get best toolchain from linaro project:
 
